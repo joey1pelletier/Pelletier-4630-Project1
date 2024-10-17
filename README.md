@@ -30,6 +30,6 @@ Below are my goals:
 
 I got sick with strep and was bedridden for over a week, so my progress wasn't substantial (loooottts of work to do over the weekend b/c of that). I was able to transfer my codepen.io code into VS Code and the GitHub project repo. On October 17th, I'll do more work on the Figma prototype, and figure out how to implement vite.js and a content management system. The current Figma prototype is presented below.
 
-![image of first Figma prototype](img/project-proto-1.JPG)
+![image of first Figma prototype](img/project-proto-1.png)
 
 This vercel deployment link shows my initial project with the website (so far, just the code I transferred from codepen): https://pelletier-4630-project1-milestone2-qdzoq8iib.vercel.app/
