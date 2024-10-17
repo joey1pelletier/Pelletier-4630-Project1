@@ -25,3 +25,9 @@ Below are my goals:
     Minimum Viable Product: An online clothing store with clothing options (most likely not as big as an actual store), a filter feature (will most likely be basic and not in depth), and a cart feature with add and remove.
 
     Stretch Goals: Add more in-depth filter options, increase the store catalog, and/or add a 'fake' enter payment page.
+
+## Milestone 1: Process Log
+
+I got sick with strep and was bedridden for over a week, so my progress wasn't substantial (loooottts of work to do over the weekend b/c of that). I was able to transfer my codepen.io code into VS Code and the GitHub project repo. On October 17th, I'll do more work on the Figma prototype, and figure out how to implement vite.js and a content management system. The current Figma prototype is presented below.
+
+![image of first Figma prototype](img/project-proto-1.JPG)

@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+}
+
+/*** Header + Logo ***/
+
+.top {
+  font-family: 'Barlow', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.logo {
+  margin-top: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+  margin-bottom: 1em;
+  margin-top: 0em;
+}
+
+
+nav a {
+  text-decoration: none;
+  font-size: .8rem;
+  color: #808080;
+  transition: color 0.25s ease-out;
+}
+
+nav a:hover {
+  color: #000000;
+  transition: color 0.25s ease-out;
+}
+
+/*** Home Image ***/
+
+.home-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://i.ibb.co/mC1N6PL/pexels-allan-mas-5368994.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15em 0;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+.img-title {
+  font-size: 50px;
+  color: #FFF;
+}
+
+.home-button {
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 0.5em;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background-color 0.25s ease-out;
+}
+
+.home-button:hover {
+  background-color: rgba(0, 0, 0 ,0.5);
+  transition: background-color 0.25s ease-out;
+}
+
+/*** Catalog Section ***/
+
+.hot-look {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 40px;
+  margin-top: 1em;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-left: 6vw;
+  margin-right: 2vw;
+}
+
+.label {
+  font-family: 'Barlow', sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.price {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.catalog-img {
+  height: 60vw;
+  background-color: #000000;
+  opacity: 1;
+   transition: .5s ease;
+}
+
+.catalog-img:hover {
+  opacity: 0.7;
+
+}
+/*** Mission Section ***/
+
+.holdingcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.internalcontainerL {
+  flex: 1;
+  background: #000;
+  padding: 30px;
+}
+
+.mission-title {
+  color: #FFFFFF;
+}
+
+.mission-desc {
+  color: #FFFFFF;
+  line-height: 1.7;
+}
+
+.internalcontainerR {
+  flex: 2;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 800px) {
+  .holdingcontainer {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 800px) {
+  .mission-title {
+    font-size: 28px;
+  }
+  .mission-desc {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mission-desc {
+    font-size: 17px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mission-title{
+    font-size: 35px;
+  }
+  .mission-desc {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 1300px) {
+  .mission-desc {
+    font-size: 23px;
+  }
+}
+
+/*** Dedication Section ***/
+
+.dedication {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-bottom: 20px;
+}
+
+.deds {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.ded {
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 2em;
+  }
+  .ded {
+    font-size: 0.7em;
+  }
+}
+
+/*** Footer Section ***/
+
+.foot {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #000;
+  padding: 10px;
+}
+
+/*** Queries for Desktop ***/
+
+@media (min-width: 800px) {
+  .top {
+    height: 70px;
+  }
+  .logo {
+    margin-top: 0.35em;
+    margin-left: 2vw;
+    float: left;
+    font-size: 2em;
+  }
+
+  nav {
+    margin-right: 10vw;
+  }
+
+  nav li {
+    padding: 20px;
+    margin-top: 0.3em;
+  }
+
+  span {
+    display: block;
+  }
+  .img-title, .home-button {
+    margin-right: 55vw;
+  }
+
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 4vw;
+    margin-right: 2vw;
+  }
+
+  .catalog-img {
+    height: 30vw;
+  }
+
+
+  .img {
+    display: block;
+  }
+
+}
