@@ -32,4 +32,4 @@ I got sick with strep and was bedridden for over a week, so my progress wasn't s
 
 ![image of first Figma prototype](img/project-proto-1.png)
 
-This vercel deployment link shows my initial project with the website (so far, just the code I transferred from codepen): https://pelletier-4630-project1-milestone2-qdzoq8iib.vercel.app/
+This vercel deployment link shows my initial project with the website (so far, just the code I transferred from codepen): pelletier-4630-project1-milestone2.vercel.app
