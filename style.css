@@ -58,6 +58,12 @@ nav a:hover {
   transition: color 0.25s ease-out;
 }
 
+.cart {
+  float: right;
+  position: relative;
+  top: 1%;
+}
+
 /*** Home Image ***/
 
 .home-img {
@@ -120,6 +126,8 @@ nav a:hover {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+
 
 .catalog-img {
   height: 60vw;

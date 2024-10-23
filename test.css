@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    font-family: "Barlow", sans-serif;
+}
+
+h1 {
+    padding-left: 0.5em;
+}
+
+h2 {
+    font-family: "Barlow", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+li, a {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #808080;
+    font-size: 0.9em;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.catalog-img {
+    height: 25vw;
+    background-color: #000000;
+    opacity: 1;
+     transition: .5s ease;
+  }
+  
+  .catalog-img:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .label {
+    font-family: 'Barlow', sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .price {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .add-to-cart {
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+}
+
