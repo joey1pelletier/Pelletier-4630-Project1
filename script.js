@@ -33,7 +33,9 @@ function addToCart(image, label, price) {
     const item = {
         image: image,
         label: label,
-        price: price
+        price: price,
+        index: cart.length
+
     };
     cart.push(item);
     console.log('Cart: ', cart);
@@ -81,6 +83,7 @@ function addToCart(image, label, price) {
     item_info_price.textContent = `$${price}`;
 
     let item_remove_icon = document.createElement('p');
+    item_remove_icon.className = 'remove-from-cart';
     item_remove_icon.textContent = 'X';
 
     item_info_div.appendChild(item_info_img);
@@ -92,6 +95,39 @@ function addToCart(image, label, price) {
 
     sessionStorage.setItem("cart_html", item_info.innerHTML);
 
+    item_remove_icon.addEventListener('click', () => {
+        removeFromCart(item, item_info_div);
+    });
+}
+
+function removeFromCart(item, item_info_div) {
+    const item_index = item.index;
+    
+    console.log(item_index);
+    if (item_index !== -1) {
+        cart.splice(item_index, 1);
+        cart.forEach((cartItem, index) => {
+            cartItem.index = index; // Update the index of each remaining item
+        });
+
+
+        sessionStorage.setItem("curr_cart", JSON.stringify(cart));
+        item_num_target.innerText = cart.length;
+        sessionStorage.setItem("curr_cart_length", JSON.stringify(cart.length));
+
+        const num_price = parseInt(item.price);
+        total_cost -= num_price;
+        console.log(total_cost);
+
+        sessionStorage.setItem("total", total_cost);
+        total_cost_target.innerText = total_cost;
+
+        item_info_div.remove();
+    
+        let item_info = document.getElementById('added-cart-items');
+        sessionStorage.setItem("cart_html", item_info.innerHTML);    
+    }
+    
 }
 
 let cart_button = document.getElementById('cart-area');

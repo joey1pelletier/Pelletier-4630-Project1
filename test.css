@@ -137,3 +137,7 @@ li, a {
     align-items: center;
     justify-content: center;
 }
+
+.remove-from-cart {
+    cursor: pointer;
+}
