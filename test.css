@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 body {
     padding: 0;
     margin: 0;
@@ -14,10 +14,13 @@ body {
 
 h1 {
     padding-left: 0.5em;
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
 }
 
 h2 {
     font-family: "Barlow", sans-serif;
+    font-weight: 100;
     font-size: 2.5em;
     text-align: center;
 }
@@ -85,7 +88,7 @@ a {
   
   .price {
     font-family: 'Barlow', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
@@ -95,8 +98,14 @@ a {
     cursor: pointer;
 }
 
+#close-popup {
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
 #popup-cart {
-    width: 50vw;
+    width: 40vw;
     height: auto;
     border: 1px solid;
     position: absolute;
@@ -127,7 +136,7 @@ a {
   
 .cart-item-price {
     font-family: 'Barlow', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     display: flex;
@@ -136,7 +145,7 @@ a {
 }
 
 .cart-item-img {
-    height: 10vw;
+    height: 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,4 +153,11 @@ a {
 
 .remove-from-cart {
     cursor: pointer;
+    font-family: "Barlow", sans-serif;
+}
+
+#total-cost-area {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    padding: 0.5em;
 }

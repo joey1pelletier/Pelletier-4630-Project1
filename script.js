@@ -10,7 +10,7 @@ item_num_target.innerText = cart.length;
 
 let total_cost_target = document.getElementById('total-cost');
 let total_cost = parseInt(localStorage.getItem('total')) || 0;
-total_cost_target.innerText = total_cost;
+total_cost_target.innerText = '$' + total_cost;
 
 let curr_item_info = document.getElementById('added-cart-items');
 //const saved_cart_html = localStorage.getItem("cart_html");
@@ -67,7 +67,7 @@ function addToCart(image, label, price) {
     console.log(total_cost);
 
     localStorage.setItem("total", total_cost);
-    total_cost_target.innerText = total_cost;
+    total_cost_target.innerText = "$" + total_cost;
     
     addItemToDOM(item);
 
@@ -154,7 +154,7 @@ function addItemToDOM(item) {
 
     let item_remove_icon = document.createElement('p');
     item_remove_icon.className = 'remove-from-cart';
-    item_remove_icon.textContent = 'X';
+    item_remove_icon.textContent = 'x';
 
     item_info_div.appendChild(item_info_img);
     item_info_div.appendChild(item_info_label);
@@ -190,7 +190,7 @@ function removeFromCart(item, item_info_div) {
         console.log(total_cost);
 
         localStorage.setItem("total", total_cost);
-        total_cost_target.innerText = total_cost;
+        total_cost_target.innerText = "$" + total_cost;
 
         item_info_div.remove();
     
